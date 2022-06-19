@@ -1,0 +1,33 @@
+Opis: "Slowo nalezace do jezyka b^n a(cb)^k , n>0, k>=0"
+Stany: 0,1,2,3,4,a,n
+Alfabet: a,b,c,_
+Dlugosc slowa: 6
+Slowo: bacb
+Stan koncowy: a,n
+Stan poczatkowy: 0
+Instrukcja:
+0:
+    a;n,a,s;
+    b;1,b,r;
+    c;n,c,s;
+    _;n,_,s;
+1:
+    a;2,a,r;
+    b;1,b,r;
+    c;n,c,s;
+    _;n,_,s;
+2:
+    a;n,a,s;
+    b;n,b,s;
+    c;3,c,r;
+    _;n,_,s;
+3:
+    a;n,a,r;
+    b;4,b,r;
+    c;n,c,s;
+    _;n,_,s;
+4:
+    a;n,a,s;
+    b;n,b,s;
+    c;3,c,r;
+    _;a,_,s;

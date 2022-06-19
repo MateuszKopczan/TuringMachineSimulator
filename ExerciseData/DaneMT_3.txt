@@ -1,0 +1,16 @@
+Opis: "Nastepnik liczby binarnej"
+Stany: 0,1,k
+Alfabet: 0,1,_
+Dlugosc slowa: 8
+Slowo: ___1001_
+Stan koncowy: k
+Stan poczatkowy: 0
+Instrukcja:
+0:
+	1;0,1,r;
+	0;0,0,r;
+	_;1,_,l;
+1:
+    1;1,0,l;
+    0;k,1,s;
+    _;k,1,s

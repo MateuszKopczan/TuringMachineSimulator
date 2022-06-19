@@ -1,0 +1,12 @@
+Opis: "Negacja"
+Stany: 0,k
+Alfabet: 0,1,_
+Dlugosc slowa: 9
+Slowo: ___011001
+Stan koncowy: k
+Stan poczatkowy: 0
+Instrukcja:
+0:
+	1;0,0,r;
+	0;0,1,r;
+	_;k,_,s;

@@ -1,0 +1,16 @@
+Opis: "Liczba w postaci w01w, gdzie w nalezy do (0 U 1)*"
+Stany: 0,1,a,n
+Alfabet: 0,1,_
+Dlugosc slowa: 10
+Slowo: __1100100__
+Stan koncowy: a,n
+Stan poczatkowy: 0
+Instrukcja:
+0:
+    0;1,0,r;
+    1;0,1,r;
+    _;n,_,s;
+1:
+    0;1,0,r;
+    1;a,1,s;
+    _;n,_,s;

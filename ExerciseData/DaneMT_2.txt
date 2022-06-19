@@ -1,0 +1,17 @@
+Opis: "Dodawanie liczb w systemie unarnym oddzielonych pustym znakiem"
+Stany: 0,1,2,k
+Alfabet: 1,_
+Dlugosc slowa: 12
+Slowo: ___111_1111_
+Stan koncowy: k
+Stan poczatkowy: 0
+Instrukcja:
+0:
+	1;0,1,r;
+	_;1,1,r;
+1:
+    1;1,1,r;
+    _;2,_,l;
+2:
+    1;k,_,s;
+    _;2,_,s;

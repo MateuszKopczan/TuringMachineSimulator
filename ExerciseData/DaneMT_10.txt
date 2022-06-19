@@ -1,0 +1,28 @@
+Opis: "Slowo nalezace do jezyka O^n1^n , n > 0"
+Stany: 0,1,2,3,4,a,n
+Alfabet: 0,1,_
+Dlugosc slowa: 6
+Slowo: 000111
+Stan koncowy: a,n
+Stan poczatkowy: 0
+Instrukcja:
+0:
+    0;1,_,r;
+    1;n,_,s;
+    _;n,_,s;
+1:
+    0;1,0,r;
+    1;1,1,r;
+    _;2,_,l;
+2:
+    0;n,_,s;
+    1;3,_,l;
+    _;n,_,s;
+3:
+    0;3,0,l;
+    1;3,1,l;
+    _;4,_,r;
+4:
+    0;1,_,r;
+    1;n,_,s;
+    _;a,_,s;

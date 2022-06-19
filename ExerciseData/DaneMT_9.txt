@@ -1,0 +1,38 @@
+Opis: "Slowo skladajace sie z takiej samej liczby 0 i 1"
+Stany: 0,1,2,3,4,5,a,n
+Alfabet: 0,1,#,_
+Dlugosc slowa: 12
+Slowo: ___101010___
+Stan koncowy: a,n
+Stan poczatkowy: 0
+Instrukcja:
+0:
+    1;1,#,r;
+    0;2,#,r;
+    #;0,#,r;
+    _;a,_,s;
+1:
+    1;1,1,r;
+    0;1,0,r;
+    #;1,#,r;
+    _;3,_,l;
+2:
+    1;2,1,r;
+    0;2,0,r;
+    #;2,#,r;
+    _;4,_,l;
+3:
+    1;3,1,l;
+    0;5,#,l;
+    #;3,#,l;
+    _;n,_,s;
+4:
+    1;5,#,l;
+    0;3,0,l;
+    #;4,#,l;
+    _;n,_,s;
+5:
+    1;5,1,l;
+    0;5,0,l;
+    #;5,#,l;
+    _;0,_,r;

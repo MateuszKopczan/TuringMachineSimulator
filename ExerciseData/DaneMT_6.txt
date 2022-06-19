@@ -1,0 +1,20 @@
+Opis: "Liczba w postaci 0w1w, gdzie w nalezy do (0 U 1)*"
+Stany: 0,1,2,a,n
+Alfabet: 0,1,_
+Dlugosc slowa: 8
+Slowo: __0001__
+Stan koncowy: a,n
+Stan poczatkowy: 0
+Instrukcja:
+0:
+    0;1,0,r;
+    1;n,1,s;
+    _;n,_,s;
+1:
+    0;1,0,r;
+    1;2,1,r;
+    _;n,_,s;
+2:
+    0;2,0,r;
+    1;2,1,r;
+    _;a,_,s;

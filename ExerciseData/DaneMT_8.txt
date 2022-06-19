@@ -1,0 +1,20 @@
+Opis: "Slowo skladajace sie z 0 i 1 zapisanych naprzemiennie"
+Stany: 0,1,2,a,n
+Alfabet: 0,1,_
+Dlugosc slowa: 12
+Slowo: __10101011__
+Stan koncowy: a,n
+Stan poczatkowy: 0
+Instrukcja:
+0:
+    0;1,_,r;
+    1;2,_,r;
+    _;a,_,s;
+1:
+    0;n,_,s;
+    1;2,_,r;
+    _;a,_,s;
+2:
+    0;1,_,r;
+    1;n,_,s;
+    _;a,_,s;
